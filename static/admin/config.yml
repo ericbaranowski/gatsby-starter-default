@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: rjlowes/activ-business-solutions
+  branch: master
+
+media_folder: static/assets
+
+collections:
+  - name: department
+    label: Department
+    folder: src/cms/departments
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: thumbnail, label: Thumbnail }
+      - { name: linkText, label: Link Text}
+      - { name: tagline, label: Tagline }
+      - { name: body, label: Body, widget: "markdown" }

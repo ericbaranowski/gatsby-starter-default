@@ -1,0 +1,34 @@
+.o-navigation {
+    @include media-breakpoint-down(md) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// 25px wide
+.o-navigation__btn {
+    position: absolute;
+    left: -37px;
+    top: 12px;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.o-navigation__main {
+    @include media-breakpoint-down(md) {
+        padding: 60px 30px;
+    }
+}
+
+.o-navigation__footer {
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}

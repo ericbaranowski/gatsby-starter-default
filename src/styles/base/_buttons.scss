@@ -1,0 +1,171 @@
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-group__btn {
+    &:first-child {
+        @include rem(margin-right, $baseline);
+    }
+
+    &:last-child {
+        @include rem(margin-left, $baseline);
+    }
+}
+
+// Basic btn class
+//
+// Note: .btn can be applied to button, anchor, label, span, input
+// 		 the code below should eliminate the differences. Remember
+//		 to check pseudo states.
+// ------------------------------
+.btn {
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid black;
+	//border-radius: 3px;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	// font-family: $font-family-body-bold;
+	font-size: 10px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 38px;
+	letter-spacing: 1px;
+	padding: 0 5em;
+	margin: 0;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	vertical-align: middle;
+
+	// Stay accessible
+	&:focus {
+		outline: 0;
+	}
+
+	// Colour modifiers
+	// ------------------------------
+	&--primary {
+		// background-color: $colour-primary;
+		// border-color: $colour-primary;
+		color: #fff;
+        background: #27aae7;
+        border-color: #27aae7;
+	}
+
+	// Size modifiers
+	// ------------------------------
+	&--lg {
+		font-size: 20px;
+	}
+
+	&--stretch {
+		width: 100%;
+	}
+}
+
+
+.btn-action {
+	background: none;
+	&--inverse {
+		border-color: white;
+		color: white;
+	}
+}
+
+
+.btn-block {
+    // background: $colour-bg;
+    padding: 20px;
+    border: 1px solid rgba(62,62,62,.08);
+}
+
+.btn-piped {
+	position: relative;
+    // @include font-size($font-size-body);
+}
+
+.btn-piped__pipe {
+    position: absolute;
+    transition: width .2s ease;
+    // background: $colour-black-olive-80;
+
+    &--top {
+    	top: 0;
+        right: auto;
+	    left: 0px;
+	    width: 0%;
+	    height: 1px;
+
+        .btn-piped:hover & {
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    &--bottom {
+        bottom: 0;
+        left: auto;
+	    right: 0px;
+	    width: 0%;
+	    height: 1px;
+
+        .btn-piped:hover & {
+            right: auto;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &--left {
+        top: 0;
+        bottom: auto;
+	    left: 0px;
+	    height: 0;
+	    width: 1px;
+
+        .btn-piped:hover & {
+        	top: auto;
+        	bottom: 0px;
+            height: 100%;
+        }
+    }
+
+    &--right {
+        bottom: 0;
+        top: auto;
+	    right: 0px;
+	    height: 0;
+	    width: 1px;
+
+        .btn-piped:hover & {
+        	bottom: auto;
+        	top: 0px;
+            height: 100%;
+        }
+    }
+}
+
+.btn-circle {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    transition: border-color .2s ease-in-out;
+
+    &:hover {
+        // border-color: $colour-registration-black-100;
+    }
+}
+
+// Alex have a .btn-icon-text
+.btn-icon {
+    cursor: pointer;
+    padding: 0;
+    font-size: 24px;
+}

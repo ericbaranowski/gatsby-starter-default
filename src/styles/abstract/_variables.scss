@@ -1,0 +1,204 @@
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width-base: 30px !default;
+
+
+// Customisations
+// -----------------------------
+$border-radius: 0;
+$spacer-vertical: 20px;
+
+// Typography
+// -----------------------------
+$baseline: 6px;
+$base-font-size: 10px;
+$body-font-size: 14px;
+
+$font-base: 10px;
+
+
+$font-family-heading: 'roboto-bold';
+$font-family-black: 'roboto-black';
+$font-family-bold: 'roboto-bold';
+// $font-family-medium: 'roboto-medium';
+$font-family-regular: 'roboto-regular';
+$font-family-light: 'roboto-light';
+$font-family-navigation: 'opensans-semibold';
+// TODO add in any bold fonts for higher font weights
+$font-family-icon: 'material-icons-regular' !default;
+$icon-font-text-size-default: 20px !default;
+
+// Loaded by font-face
+$typefaces: (
+    $font-family-black,
+    $font-family-bold,
+    // $font-family-medium,
+    // $font-family-medium,
+    $font-family-regular,
+    $font-family-light,
+    $font-family-navigation
+);
+
+// Font colours
+$pallette-body: $colour-jet-100;
+
+// Spacing utilities
+// -----------------------------
+$sizing1: $baseline;
+$sizing2: $baseline * 2;
+$sizing3: $baseline * 3;
+$sizing4: $baseline * 4;
+$sizing5: $baseline * 5;
+$sizing6: $baseline * 6;
+$sizing7: $baseline * 7;
+$sizing8: $baseline * 8;
+$sizing9: $baseline * 9;
+$sizing10: $baseline * 10;
+$sizing11: $baseline * 11;
+
+$typography-heading1: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-black,
+    // text-transform: uppercase,
+    font: (
+        null: (size: 72px, line-height: 84px),
+        md: (size: 72px, line-height: 84px)
+    )
+);
+
+$typography-heading2: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-bold,
+    // text-transform: uppercase,
+    font: (
+        null: (size: 40px, line-height: 46px)
+    )
+);
+
+$typography-heading3: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-regular,
+    text-transform: uppercase,
+    font: (
+        null: (size: 14px, line-height: 18px)
+    )
+);
+
+$typography-heading4: (
+  color: $colour-registration-black-100,
+  font-family: $font-family-regular,
+  text-transform: none,
+  font: (
+    null: (size: 18px, line-height: 24px)
+  )
+);
+
+$typography-heading5: (
+  color: $colour-registration-black-100,
+  font-family: $font-family-regular,
+  text-transform: none,
+  font: (
+    null: (size: 14px, line-height: 24px)
+  )
+);
+
+$typography-heading6: (
+  color: $colour-registration-black-100,
+  font-family: $font-family-bold,
+  text-transform: none,
+  font: (
+    null: (size: 14px, line-height: 24px)
+  )
+);
+
+$typography-body: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-light,
+    text-transform: null,
+    font: (
+        null: (size: 14px, line-height: 24px)
+    )
+);
+
+$typography-body-bold: (
+    color: $pallette-body,
+    font-family: $font-family-bold,
+    text-transform: none,
+    font: (
+        null: (size: 14px, line-height: 18px)
+    )
+);
+
+$typography-body-small: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-light,
+    text-transform: none,
+    font: (
+        null: (size: 12px, line-height: 18px)
+    )
+);
+
+$typography-navigation: (
+    color: $pallette-body,
+    font-family: $font-family-navigation,
+    text-transform: uppercase,
+    font: (
+        null: (size: 11px, line-height: 18px)
+    )
+);
+
+$typography-label: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-bold,
+    font: (
+        null: (size: 14px, line-height: 18px)
+    )
+);
+
+$typography-input: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-regular,
+    text-transform: null,
+    font: (
+        null: (size: 14px, line-height: 18px)
+    )
+);
+
+$typography-legend: (
+    color: $colour-registration-black-100,
+    font-family: $font-family-bold,
+    text-transform: uppercase,
+    font: (
+        null: (size: 14px, line-height: 18px)
+    )
+);
+
+$btn-padding-y: 200px;
+
+// Alerts
+// -----------------------------
+$alert-border-radius: 0;
+$alert-padding: 18px 18px;
+$alert-text-align: center;
+// $alert-border-colour-default: $colour-alien-armpit-100;
+// $alert-background-colour-default: $colour-honeydew-100;
+$alert-border-success: 1px solid $colour-alien-armpit-100;
+$alert-background-success: $colour-honeydew-100;
+$alert-border-info: 1px solid $colour-goldenrod-100;
+$alert-background-info: $colour-cornsilk-100;
+$alert-border-error: 1px solid $colour-maximum-red-100;
+$alert-background-error: $colour-misty-rose-100;
+
+// Product
+$product-slider-arrow-icon-size: 40px !default;
+$product-images-arrow-icon-size: $product-slider-arrow-icon-size !default;
+
+/* HEADER STYLES */
+$header-primary-nav-bg-color: $colour-platinum-100;
+$header-subnav-bg-color: $colour-outer-space-100;
+$header-country-dropdown-bg-color: $colour-white-100;
+$header-root-category-hover-bg-colour: $colour-registration-black-100;
+$header-root-category-hover-colour: $colour-white-100;
+$header-logo-image: '../images/accelerate-logo.png';
+$header-logo-width: 225px;
+$header-logo-height: 50px;

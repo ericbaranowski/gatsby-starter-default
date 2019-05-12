@@ -1,0 +1,22 @@
+.pager {
+    position: fixed;
+    right: $sizing2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pager__item {
+    padding: $sizing1 0;
+}
+
+.pager__link {
+    background: #dfdfdf;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+
+    &--active {
+        background: #eecebc;
+    }
+}

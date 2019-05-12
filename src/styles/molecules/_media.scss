@@ -1,0 +1,18 @@
+.m-media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.m-media__figure {
+    // @extend .margin-right-lv2;
+
+    &--reverse {
+        float: right;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+}
+
+.m-media__body {
+    flex: 1;
+}
